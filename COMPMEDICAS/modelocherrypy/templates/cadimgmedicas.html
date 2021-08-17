@@ -1,0 +1,42 @@
+<div class="container">
+    <h2>Imagens Medicas</h2>
+    <form onsubmit="EnviaDadosFoto()" id="fupload" method="post">
+        <div class="form-group">
+            <label for="autor">Autor:</label>
+            <input type="text" class="form-control" id="autor" placeholder="Entre com o nome do autor" name="autor">
+        </div>
+        <div class="form-group">
+            <label for="date">Data:</label>
+            <input type="date" class="form-control" id="date" placeholder="" name="date">
+        </div>
+        <div class="form-group">
+            <label for="title">Titulo:</label>
+            <input type="text" class="form-control" id="title" placeholder="Entre com o titulo" name="title">
+        </div>
+        <div class="form-group">
+            <label for="patient">Paciente:</label>
+            <input type="text" class="form-control" id="patient" placeholder="Entre com a fisionomia do paciente" name="patient">
+        </div>
+        <div class="form-group">
+            <label for="keywords">Palavras Chaves:</label>
+            <input type="text" class="form-control" id="keywords" placeholder="Entre com palavras chaves separadas por virgula" name="keywords">
+        </div>
+        <div class="form-group">
+            <label for="especiality">Especialidade:</label>
+            <input type="text" class="form-control" id="especiality" placeholder="Entre com a especialidade" name="especiality">
+        </div>
+        <div class="form-group">
+            <label for="diagnostic">Diagnostico:</label>
+            <input type="text" class="form-control" id="diagnostic" placeholder="Entre com o diagnostico" name="diagnostic">
+        </div>
+        <div>
+            <label for="foto">Foto:</label>
+            <input type="file" id="foto" name="foto" accept="image/png, image/jpeg">
+        </div>
+        <br>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+    </form>
+</div>
+        <hr>
+        <div class="alert alert-dark" id="subfoto">
+        </div>

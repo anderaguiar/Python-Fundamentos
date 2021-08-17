@@ -1,0 +1,28 @@
+<div class="container">
+    <h2>Consultar Imagens Medicas</h2>
+    <form onsubmit="EnviaDadosConsultaMedica()" id="fupload" method="post">
+        <div class="form-group">
+            <label for="filtro">Filtro:</label>
+            <select name="filtro" id="filtro">
+                <option value="autor">Autor</option>
+                <option value="title">Titulo</option>
+                <option value="patient">Paciente</option>
+                <option value="keywords">Palavras Chaves</option>
+                <option value="especiality">Especialidade</option>
+                <option value="diagnostic">Diagnostico</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="valor">Pesquisa:</label>
+            <input type="text" class="form-control" id="valor" placeholder="Entre com a pesquisa" name="valor">
+        </div>
+        <button type="submit" class="btn btn-primary">Consultar</button>
+    </form>
+        <hr>
+        <div class="form-group" id="subFoto">
+        </div>
+    <br>
+    <br>
+    <br>
+    <br>
+</div>
